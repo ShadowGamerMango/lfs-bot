@@ -15,9 +15,7 @@ from time import sleep
 
 intents = discord.Intents.all()
 
-reddit = asyncpraw.Reddit(client_id='s-PoBApuWL-Rmg',
-                     client_secret='IonsVCxPhoB7lxmuMOlUXv0oo0KEuw',
-                     user_agent='furry_irl')
+agent='furry_irl')
 
 intents.members = False
 
@@ -27,8 +25,6 @@ client = commands.Bot(command_prefix=['lfs! ','lfs!'], intents=Intents.all())
 client.remove_command('help')
 
 client.remove_command('lovetest')
-
-token = "ODM4ODgxNTIzNjQxMzUyMjEy.YJBjTA.wwAEjpgkBHj68eJO0Sr2uGWIqA4"
 #--------------------------------------------------------------Furry Security bot---------------------------------------------------------------------------
 
 
@@ -483,5 +479,3 @@ async def unban(ctx, *, member):
             await ctx.guild.unban(user)
             await ctx.send(f'Unbanned {user.name}#{user.discriminator}')
             return
-
-client.run(token)
