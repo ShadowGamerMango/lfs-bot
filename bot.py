@@ -1,30 +1,3 @@
-import discord
-import os
-import random
-import asyncio
-import asyncpraw
-import time
-from discord import Client, Intents, Embed
-from discord.ext import commands
-from discord.utils import get
-from discord import FFmpegPCMAudio
-from discord import TextChannel
-from dotenv import load_dotenv
-from youtube_dl import YoutubeDL
-from time import sleep
-
-intents = discord.Intents.all()
-
-agent='furry_irl')
-
-intents.members = False
-
-load_dotenv()
-client = commands.Bot(command_prefix=['lfs! ','lfs!'], intents=Intents.all())
-
-client.remove_command('help')
-
-client.remove_command('lovetest')
 #--------------------------------------------------------------Furry Security bot---------------------------------------------------------------------------
 
 
